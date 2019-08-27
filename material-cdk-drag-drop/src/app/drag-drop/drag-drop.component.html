@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="container">
+    <ng-container *ngIf="todoList$ | async as todoList">
+      <mat-card class="col-xs-3" *ngFor="let t of todoList">
+        <mat-card-header>
+          <mat-card-title>{{t.title}}</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>
